@@ -1,0 +1,111 @@
+import java.util.regex.Pattern
+
+// Keystore and passwords remain private, outside Android source/assets.
+def signingPropertiesFile = rootProject.file('../signing/release.properties')
+def releaseSigning = new Properties()
+if (signingPropertiesFile.exists()) {
+    signingPropertiesFile.withInputStream { releaseSigning.load(it) }
+}
+
+
+android {
+    namespace 'com.madtriangle.basketshots'
+    compileSdkVersion 33
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ["$buildDir/generated/jniLibs"]
+        }
+
+    }
+    signingConfigs {
+        if (!releaseSigning.isEmpty()) {
+            release {
+                storeFile new File(signingPropertiesFile.parentFile, releaseSigning.getProperty('storeFile'))
+                storePassword releaseSigning.getProperty('storePassword')
+                keyAlias releaseSigning.getProperty('keyAlias')
+                keyPassword releaseSigning.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (!releaseSigning.isEmpty()) signingConfig signingConfigs.release
+        }
+    }
+    defaultConfig {
+        applicationId = doExtractStringFromManifest("package")
+        minSdkVersion 14
+        targetSdkVersion 33
+        multiDexEnabled true
+        versionCode 3
+        versionName "1.2.0"
+    }
+}
+def doExtractStringFromManifest(name) {
+    def manifestFile = file(android.sourceSets.main.manifest.srcFile)
+    def pattern = Pattern.compile(name + "=\"(\\S+)\"")
+    def matcher = pattern.matcher(manifestFile.getText())
+    matcher.find()
+    return matcher.group(1)
+}
+// needed to add JNI shared libraries to APK when compiling on CLI
+/*tasks.withType(com.android.build.gradle.tasks.PackageApplication) { pkgTask ->
+    pkgTask.jniFolders = new HashSet<File>()
+    pkgTask.jniFolders.add(new File(projectDir, 'libs'))
+}*/
+
+// called every time gradle gets executed, takes the native dependencies of
+// the natives configuration, and extracts them to the proper libs/ folders
+// so they get packed with the APK.
+task copyAndroidNatives {
+    inputs.files(configurations.natives)
+    outputs.dir(file("$buildDir/generated/jniLibs"))
+    doLast {
+        configurations.natives.files.each { jar ->
+            def abi = ['armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'].find {
+                jar.name.endsWith("natives-${it}.jar")
+            }
+            if (abi != null) {
+                copy {
+                    from zipTree(jar)
+                    into file("$buildDir/generated/jniLibs/$abi")
+                    include '*.so'
+                }
+            }
+        }
+    }
+}
+tasks.named('preBuild').configure { dependsOn copyAndroidNatives }
+
+task run(type: Exec) {
+    def path
+    def localProperties = project.file("../local.properties")
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        def sdkDir = properties.getProperty('sdk.dir')
+        if (sdkDir) {
+            path = sdkDir
+        } else {
+            path = "$System.env.ANDROID_HOME"
+        }
+    } else {
+        path = "$System.env.ANDROID_HOME"
+    }
+
+    def adb = path + "/platform-tools/adb"
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.madtriangle.basketshots/com.madtriangle.basketshots.AndroidLauncher'
+}
+
+dependencies {
+        implementation "com.google.android.gms:play-services-ads:9.0.0"
+        implementation "androidx.multidex:multidex:2.0.1"
+}

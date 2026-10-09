@@ -1,0 +1,41 @@
+# Private signing material and machine-specific configuration
+*.jks
+*.keystore
+*.p12
+*.pfx
+signing/*.properties
+local.properties
+.env
+.env.*
+!.env.example
+
+# Generated builds and Android packages
+**/build/
+**/.gradle/
+*.apk
+*.aab
+*.apks
+
+# Local IDE / OS files
+.idea/
+**/.idea/
+*.iml
+.DS_Store
+Thumbs.db
+**/.classpath
+**/.project
+**/.settings/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Ephemeral test server, LAN QR codes and RAM-backed preview artifacts
+apk-download-qr.png
+output/previews/
+output/test-download/
+output/test-download-url.txt
+output/test-download-server.log
+output/test-download-server.pid
+
+# Keep the public PEM certificate and generation prompt records.

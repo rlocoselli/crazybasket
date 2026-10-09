@@ -1,0 +1,58 @@
+[
+  {
+    "scene": "street",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-e990e992-c3b5-44fe-a2d4-7f51c64b482d.png",
+    "path": "game - Android Studio/android/assets/courts/street.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a welcoming outdoor neighborhood court, distant warm brick buildings, leafy trees and a soft peach afternoon sky. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "rooftop",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-21dae1b8-6719-44f0-aa94-e521ab31e499.png",
+    "path": "game - Android Studio/android/assets/courts/rooftop.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a rooftop basketball court at blue hour, distant elegant city skyline, soft glowing city lights and violet sky. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "beach",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-ce40a577-2cc9-4ea7-9b33-d89473bd0829.png",
+    "path": "game - Android Studio/android/assets/courts/beach.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a seaside court with turquoise ocean, pale sandy shore, distant palm trees and a bright pastel sky. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "arena",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-f331b0a9-8362-42fc-9c13-c473e694f05a.png",
+    "path": "game - Android Studio/android/assets/courts/arena.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create an indoor professional basketball arena, distant softly lit spectator stands, blue and amber arena lighting, polished wooden court. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "park",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-280b9295-de1f-4a06-953e-d7717b85b4f7.png",
+    "path": "game - Android Studio/android/assets/courts/park.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a peaceful green park court with lush softly painted trees, distant hills, blue sky and a few fluffy clouds. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "desert",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-7a71d7ab-e9cf-4272-8636-cd6fb2ccd2e3.png",
+    "path": "game - Android Studio/android/assets/courts/desert.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a desert basketball court surrounded by warm sandstone mesas, distant cacti, sunset peach and gold sky. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "snow",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-f622e906-3db6-4406-9195-776a54a6271e.png",
+    "path": "game - Android Studio/android/assets/courts/snow.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a winter basketball court with distant snow-covered pine trees and mountains, pale blue sky, the playing surface clear of snow. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  },
+  {
+    "scene": "space",
+    "source": "/home/locoselli/.codex/generated_images/01a120c0-41f9-76a1-b915-ca5da6223e91/exec-4d8282b6-fb67-40c3-95e3-02ebba5fcb7c.png",
+    "path": "game - Android Studio/android/assets/courts/space.png",
+    "prompt": "Use case: illustration-story. Asset type: production mobile basketball game background, landscape 16:9. Create a magical basketball court on a moon station, deep indigo star-filled sky, distant planets, purple and turquoise accents. Cohesive polished hand-painted 2D cartoon sports game art, softly shaded forms, tasteful color palette, crisp readable silhouettes. Camera straight-on side view suitable for a side-view physics basketball game, not overhead and not isometric. Bottom 40 percent is an open unobstructed flat playing surface with subtle basketball court lines; horizon around 55 percent from top. Keep the entire center area spacious and visually quiet for the game's separately rendered hoop and ball. Distant environmental scenery only. No basketball hoops, no backboards, no balls, no characters, no text, no logos, no UI, no foreground objects, no flat rectangular silhouettes with dot windows. Fully opaque edge-to-edge illustration.",
+    "tool": "image_gen (built-in)"
+  }
+]
